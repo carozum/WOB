@@ -13,12 +13,12 @@ get_header();
                 $parentID = wp_get_post_parent_id(get_the_ID());
                 // la page est une page enfant
                 if ($parentID) { ?>
-                    <div>
+                    <div class="hero">
+                        <h1 class="text-center my-4"><?php the_title(); ?></h1>
+
                         <p>
                             <a class="nav-link" href="<?php echo get_the_permalink($parentID); ?>"><i class="fa fa-home" aria-hidden="true"></i> Retour à <?php echo get_the_title(($parentID)); ?></a>
                         </p>
-                        <h1 class="text-center my-4"><?php the_title(); ?></h1>
-
                     </div>
                 <?php
                     // la page est une page parent

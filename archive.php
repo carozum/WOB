@@ -1,9 +1,20 @@
 <?php
 get_header();
 ?>
-<div id="hero" class="text-center my-4">
-    <h1>Webcome on Board!</h1>
-    <p>Suivre les dernières actualités</p>
+<div id="hero">
+    <h1 class="text-center my-4">
+        <?php
+        if (is_category()) {
+            single_cat_title();
+        } elseif (is_author()) {
+            echo 'Posts by ';
+            the_author();
+        } else {
+            the_archive_title();
+        }
+        ?>
+    </h1>
+    <p><?php the_archive_description(); ?></p>
 </div>
 
 <div class="container">
