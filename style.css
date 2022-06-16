@@ -1,6 +1,90 @@
 /* Theme Name: WOB Theme
 Author Name: Carozum
 Version: 1.0*/
-body{
-    background-color: blue;
+
+/* https://developer.mozilla.org/fr/docs/Web/CSS/var */
+
+:root{
+    --wob-primary: #1D63A7;     /* 29 99 167*/
+    --wob-secondary: #05F2F2;   /*5 242 242*/
+    --wob-info: #D9A648;          /*217 166 72*/
+    --wob-warning: #F2916D;        /*242 145 109*/
+  }
+ 
+.btn{
+    border: none;
 }
+.btn-primary{
+    background-color: var(--wob-primary);
+}
+.btn-primary:focus, 
+.btn-primary:focus-within{
+    box-shadow: 0 0 0 0.25rem rgb(29 99 167 / 30%);
+}
+.btn-primary:hover{
+    background-color: rgb(29 99 167 / 80%);
+
+}
+.btn-secondary{
+    background-color: var(--wob-secondary);
+}
+
+.btn-info{
+    background-color: var(--wob-info);
+}
+.btn-warning{
+    background-color: var(--wob-warning);
+}
+
+.custom-logo{
+     height: 80px;
+     width: 80px;
+ }
+
+
+ /* liens du footer */
+
+footer a{
+    color: white;
+}
+footer .menu-item-object-page{
+    list-style-type: none;
+}
+footer .menu-item-object-page a{
+    text-decoration: none;
+}
+footer .menu-item-object-page.menu-item-has-children{
+    text-transform: uppercase;
+}
+
+footer .sub-menu{
+    padding-left: 0;
+    text-transform: lowercase;
+}
+footer ul.menu{
+    padding-left: 0;
+ }
+
+
+/* navigation du header */
+
+@media (min-width: 768px){
+#menu-main-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+}
+
+
+@media (max-width: 767px){
+    #main-menu{
+        margin-right: 10%;
+    }
+    .menu-item{
+        margin-left: auto;
+    }
+}
+
+
+

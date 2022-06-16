@@ -7,7 +7,7 @@ get_header();
         while (have_posts()) {
             the_post();
     ?>
-
+            <p>je suis le post</p>
             <h1><?php the_title() ?></h1>
             <p><?php the_content() ?></p>
 

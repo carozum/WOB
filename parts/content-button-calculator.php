@@ -1,0 +1,1 @@
+<a href="<?php echo site_url('#wobCalculator') ?>" class="btn btn-primary rounded-5">Simuler son projet</a>
