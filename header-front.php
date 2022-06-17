@@ -16,7 +16,7 @@
             <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
                 <div class="container-fluid text-primary">
                     <!-- <a class="navbar-brand" href="<?php site_url(); ?>">NavBar</a> -->
-                    <?php echo get_custom_logo();   ?>
+                    <?php echo get_custom_logo(); ?>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
